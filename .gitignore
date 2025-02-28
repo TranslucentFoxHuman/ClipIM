@@ -1,2 +1,4 @@
 /build
 CMakeLists.txt.user
+/usr/bin
+/usr/lib
