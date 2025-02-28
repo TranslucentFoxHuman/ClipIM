@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Utility;
+Exec=clipim
+Icon=clipim
+MimeType=
+Name=ClipIM
+StartupNotify=true
+Terminal=false
+Type=Application 
