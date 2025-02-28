@@ -30,3 +30,27 @@ Pressing the Copy and Close button will copy the content to the clipboard and ex
 ## Convenient Usage
 This software does not capture shortcut keys by itself. It is designed to be registered in the shortcut key settings of your desktop environment.  
 For example, you can assign "```clipim -s```" to Win+Insert and "```clipim -m```" to Win+Shift+Insert, but it is up to you which keys to assign to which commands.
+
+# Build Instructions
+## Required Packages
+### Debian-based Systems
+To build this project on a Debian-based system, install the following:
+- cmake
+- build-essential
+- qtbase5-dev or qt6-base-dev
+
+You can install these packages by running the following command:  
+```sudo apt install cmake build-essential qtbase5-dev```
+
+## Build
+To build, navigate to the folder containing this project and execute the following commands in order:
+```
+mkdir build
+cd build
+cmake ../
+make -j$(nproc)
+```
+Optionally, you can install this software on your system with the following command:  
+```
+sudo make install
+```
