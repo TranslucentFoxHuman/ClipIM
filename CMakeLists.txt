@@ -67,6 +67,8 @@ install(TARGETS clipim
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+install (FILES clipim.svg DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps)
+install (FILES clipim.desktop DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
 
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(clipim)
