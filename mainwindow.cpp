@@ -33,10 +33,17 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->tabWidget->setCurrentIndex(mode);
 
+    //複数行表示モードでのCtrl+Enterによる完了
     QAction *action = new QAction(this);
     action->setShortcut(QKeySequence("Ctrl+Return"));
     connect(action, &QAction::triggered, this, &MainWindow::on_cpandcloseButton_clicked);
     this->addAction(action);
+
+    //Escapeキーによる終了
+    QAction *EscAction = new QAction(this);
+    EscAction->setShortcut(QKeySequence("Esc"));
+    connect(EscAction, &QAction::triggered, this, &MainWindow::close);
+    this->addAction(EscAction);
 
     switch (mode) {
         case 0:

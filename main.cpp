@@ -1,4 +1,4 @@
-#define _VERSION_CODE_ "1.0.0"
+#define _VERSION_CODE_ "1.1.0"
 
 /*
  * ClipIM
