@@ -40,6 +40,31 @@ Debianベースのシステムでこのプロジェクトをビルドするに�
 次のコマンドを実行して、これらのパッケージをインストールすることができます。  
 ```sudo apt install cmake build-essential qtbase5-dev```
   
+### Fedora  
+Fedoraでこのプロジェクトをビルドするには、以下をインストールします。
+- グループ c-development
+- cmake
+- qt5-qtbase-devel または qt6-qtbase-devel
+
+
+次のコマンドを実行して、これらのパッケージをインストールすることができます。
+```
+sudo dnf group install c-development
+sudo dnf install cmake qt5-qtbase-devel
+```
+
+### Arch Linux
+Arch Linuxでこのプロジェクトをビルドするには、以下をインストールします。
+- base-devel
+- cmake
+- qt5-base または qt6-base  
+  
+  
+次のコマンドを実行して、これらのパッケージをインストールすることができます。
+```
+sudo pacman -S base-devel cmake qt5-base
+```
+
 ## ビルド
 ビルドするには、このプロジェクトのあるフォルダに移動し、以下のコマンドを順に実行します。
 ```
