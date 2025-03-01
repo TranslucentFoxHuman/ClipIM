@@ -31,7 +31,7 @@ Copy and Closeボタンを押すと、内容をクリップボードにコピー
 
 # ビルド方法
 ## 必要なパッケージ
-### Debianベースのシステム
+### Debianベースのシステム (Ubuntuを含む)
 Debianベースのシステムでこのプロジェクトをビルドするには、以下をインストールします。
 - cmake
 - build-essential

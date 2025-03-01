@@ -33,7 +33,7 @@ For example, you can assign "```clipim -s```" to Win+Insert and "```clipim -m```
 
 # Build Instructions
 ## Required Packages
-### Debian-based Systems
+### Debian-based Systems (including Ubuntu)
 To build this project on a Debian-based system, install the following:
 - cmake
 - build-essential
@@ -55,7 +55,7 @@ sudo dnf install cmake qt5-qtbase-devel
 ```
 
 ### Arch Linux
-To build this project on Fedora, install the following:
+To build this project on Arch Linux, install the following:
 - base-devel
 - cmake
 - qt5-base or qt6-base
